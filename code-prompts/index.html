@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Talking to Claude Like an Intern. Use These Prompts Instead. — Danish Filmmaker</title>
+<meta name="description" content="My 7 Claude prompts for pro-level code: build complete apps from scratch, understand and refactor codebases, debug production bugs, design systems, optimize performance, run multi-agent workflows, and build production UI components.">
+<link rel="canonical" href="https://dani-google.github.io/blog/code-prompts/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stop Talking to Claude Like an Intern. Use These Prompts Instead.">
+<meta property="og:description" content="My 7 Claude prompts for pro-level code: build complete apps from scratch, understand and refactor codebases, debug production bugs, design systems, optimize performance, run multi-agent workflows, and build production UI components.">
+<meta property="og:url" content="https://dani-google.github.io/blog/code-prompts/">
+<link rel="stylesheet" href="/style.css">
+<style>
+.blog-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.3; }
+.blog-body h2 { color: var(--text); margin: 26px 0 8px; font-size: 1.25rem; }
+.blog-body h3 { color: var(--text); margin: 22px 0 6px; font-size: 1.1rem; }
+.blog-body ul, .blog-body ol { margin: 0 0 14px; padding-left: 22px; }
+.blog-body li { margin-bottom: 6px; }
+.blog-body a { color: var(--accent); }
+.blog-body blockquote { border-left: 3px solid var(--accent); margin: 0 0 14px; padding: 4px 0 4px 14px; }
+.blog-body pre { overflow-x: auto; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin: 0 0 14px; }
+.blog-body code { font-size: 0.92em; }
+.blog-body table { border-collapse: collapse; margin: 0 0 14px; width: 100%; }
+.blog-body th, .blog-body td { border: 1px solid var(--border, #333); padding: 8px; text-align: left; }
+.related { margin-top: 26px; border-top: 1px solid var(--border, #333); padding-top: 14px; }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 8px; }
+.tldr { background: rgba(255,255,255,0.05); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; margin: 0 0 18px; }
+.tldr p { margin: 0; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.pager a { color: var(--accent); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Stop Talking to Claude Like an Intern. Use These Prompts Instead.", "description": "My 7 Claude prompts for pro-level code: build complete apps from scratch, understand and refactor codebases, debug production bugs, design systems, optimize performance, run multi-agent workflows, and build production UI components.", "datePublished": "2026-11-15", "author": {"@type": "Person", "name": "Danish Khan"}, "url": "https://dani-google.github.io/blog/code-prompts/", "mainEntityOfPage": "https://dani-google.github.io/blog/code-prompts/"}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/#top">&gt; DANISH</a>
+  <nav>
+    <a href="/#work">Work</a>
+    <a href="/#services">Services</a>
+    <a href="/#tools">Tools</a>
+    <a href="/#about">About</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">DM for work</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
+    <article class="blog-card reveal open">
+      <div class="blog-meta"><span>15 November 2026</span><span class="tag">Claude Mastery</span></div>
+      <h1>Stop Talking to Claude Like an Intern. Use These Prompts Instead.</h1>
+      <div class="blog-body">
+<div class="tldr"><p><strong>Short answer:</strong> I used to talk to Claude the way most people do: "do this," "write code," "fix this error." My output stayed junior because my instructions were junior. My change was simple: I started talking to Claude like the senior engineer it can be — role, context, and a clear deliverable, every single time.</p></div>
+<p>I used to talk to Claude the way most people do: &quot;do this,&quot; &quot;write code,&quot; &quot;fix this error.&quot; My output stayed junior because my instructions were junior. My change was simple: I started talking to Claude like the senior engineer it can be — role, context, and a clear deliverable, every single time. Here are my seven prompts, the ones that actually get me pro-level output.</p>
+<h3>1. My Complete App From Scratch</h3>
+<p>My first prompt builds a whole app. I tell Claude to think like a senior full-stack engineer building a production-ready app: design the system architecture first, then build the minimal scalable version — architecture, file structure, database schema, API endpoints, UI architecture, and complete code.</p>
+<p>Prompt: Think like a senior full-stack engineer building a production-ready app. First design the system architecture, then build the minimal scalable version. Deliver: system architecture, file structure, database schema, API endpoints, UI architecture, and complete code. App idea: [IDEA]</p>
+<h3>2. My Codebase Understanding + Refactor</h3>
+<p>My second prompt is for code I did not write. I ask Claude to think like a senior engineer who just joined an unfamiliar codebase: map the architecture and data flow, then find the structural problems, duplicated code, bottlenecks, and maintainability risks — and hand me an architecture summary plus a problem list.</p>
+<p>Prompt: Think like a senior engineer who just joined this unfamiliar codebase. First understand the architecture and data flow, then identify structural problems, duplicated code, bottlenecks, and maintainability risks. Deliver an architecture summary and a prioritized problem list. Codebase: [PASTE CODE / REPO]</p>
+<h3>3. My Senior Debugging Engineer</h3>
+<p>My third prompt is for production bugs. I ask Claude to investigate like a senior debugging engineer: analyze the code carefully, think step by step, find the root cause, and propose robust solutions — explaining what the code does, what the problem is, why it fails, the edge cases, and the fix.</p>
+<p>Prompt: Think like a senior debugging engineer investigating a production bug. Analyze the code carefully and step by step, find the root cause, and propose robust solutions. Explain: what the code does, the problem, why it fails, the edge cases, and the fix. Bug + code: [DESCRIBE + PASTE]</p>
+<h3>4. My System Design + Implementation</h3>
+<p>My fourth prompt designs before it builds. I ask Claude to think like a senior systems architect: design a scalable system for my requirements, then implement it — so I never get code without a structure underneath it.</p>
+<p>Prompt: Think like a senior systems architect. Design a scalable system for these requirements, then implement it: architecture, components, data flow, and the key trade-offs. Requirements: [REQUIREMENTS]</p>
+<h3>5. My Performance Optimization</h3>
+<p>My fifth prompt is for slow code. I ask Claude to think like a performance engineer: find what is actually slow, fix it for speed, and tell me what changed and why — not just a faster version I do not understand.</p>
+<p>Prompt: Think like a performance engineer. Optimize this code for speed: find the real bottlenecks, fix them, and explain what was slow, what you changed, and why it is faster now. Code: [PASTE CODE]</p>
+<h3>6. My Multi-Agent Workflow</h3>
+<p>My sixth prompt splits the job four ways. I cast Claude as four collaborating agents — Architect, Engineer, Reviewer, Optimizer — so the design, the build, the critique, and the polish each get a dedicated pass instead of one rushed answer.</p>
+<p>Prompt: Work as four collaborating agents on this task: the Architect designs the approach, the Engineer builds it, the Reviewer critiques it, and the Optimizer polishes it. Show each agent&#x27;s pass in order. Task: [TASK]</p>
+<h3>7. My Production-Level UI Components</h3>
+<p>My seventh prompt builds components I can actually ship. I ask Claude to think like a senior frontend engineer: reusable, accessible UI components — clean props, real states, accessibility built in, not demo code.</p>
+<p>Prompt: Think like a senior frontend engineer. Build reusable, accessible UI components for this requirement: clean props, all real states, accessibility built in, production-ready code — not demo code. Requirement: [REQUIREMENT]</p>
+<h3>My Rule Across All Seven</h3>
+<p>My rule across all seven: the role comes first, the context second, the deliverable third. &quot;Do this&quot; gives you intern output. A senior role with real context and a named deliverable gives you senior output. That single change is the whole trick.</p>
+
+      </div>
+    </article>
+    <nav class="pager">
+      <span><a href="/blog/claude-secret-tricks/">← My 5 Claude Secret Tricks: Skills, Commands, and Subagents I Actually Use</a></span><span><a href="/blog/">All articles</a></span><span><a href="/blog/ai-short-film-platforms/">I Found 5 Places to Earn From My AI Short Films Besides YouTube →</a></span>
+    </nav>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Danish Filmmaker</p>
+  <p class="footer-tag">Built frame by frame.</p>
+  <a href="/#top" class="to-top">Back to top ↑</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
