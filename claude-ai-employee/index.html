@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Turned Claude Into My Full-Time AI Employee. This Is the Exact Prompt Stack I Use. — Danish Filmmaker</title>
+<meta name="description" content="Every business has that one task. The one that eats an hour every single day, the same clicks, the same copy-paste, the same follow-ups. I used to accept…">
+<link rel="canonical" href="https://dani-google.github.io/blog/claude-ai-employee/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="I Turned Claude Into My Full-Time AI Employee. This Is the Exact Prompt Stack I Use.">
+<meta property="og:description" content="Every business has that one task. The one that eats an hour every single day, the same clicks, the same copy-paste, the same follow-ups. I used to accept…">
+<meta property="og:url" content="https://dani-google.github.io/blog/claude-ai-employee/">
+<link rel="stylesheet" href="/style.css">
+<style>
+.blog-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.3; }
+.blog-body h2 { color: var(--text); margin: 26px 0 8px; font-size: 1.25rem; }
+.blog-body h3 { color: var(--text); margin: 22px 0 6px; font-size: 1.1rem; }
+.blog-body ul, .blog-body ol { margin: 0 0 14px; padding-left: 22px; }
+.blog-body li { margin-bottom: 6px; }
+.blog-body a { color: var(--accent); }
+.blog-body blockquote { border-left: 3px solid var(--accent); margin: 0 0 14px; padding: 4px 0 4px 14px; }
+.blog-body pre { overflow-x: auto; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin: 0 0 14px; }
+.blog-body code { font-size: 0.92em; }
+.blog-body table { border-collapse: collapse; margin: 0 0 14px; width: 100%; }
+.blog-body th, .blog-body td { border: 1px solid var(--border, #333); padding: 8px; text-align: left; }
+.related { margin-top: 26px; border-top: 1px solid var(--border, #333); padding-top: 14px; }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 8px; }
+.tldr { background: rgba(255,255,255,0.05); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; margin: 0 0 18px; }
+.tldr p { margin: 0; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.pager a { color: var(--accent); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "I Turned Claude Into My Full-Time AI Employee. This Is the Exact Prompt Stack I Use.", "description": "Every business has that one task. The one that eats an hour every single day, the same clicks, the same copy-paste, the same follow-ups. I used to accept…", "datePublished": "2026-11-15", "author": {"@type": "Person", "name": "Danish Khan"}, "url": "https://dani-google.github.io/blog/claude-ai-employee/", "mainEntityOfPage": "https://dani-google.github.io/blog/claude-ai-employee/"}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/#top">&gt; DANISH</a>
+  <nav>
+    <a href="/#work">Work</a>
+    <a href="/#services">Services</a>
+    <a href="/#tools">Tools</a>
+    <a href="/#about">About</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">DM for work</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
+    <article class="blog-card reveal open">
+      <div class="blog-meta"><span>15 November 2026</span><span class="tag">Claude Mastery</span></div>
+      <h1>I Turned Claude Into My Full-Time AI Employee. This Is the Exact Prompt Stack I Use.</h1>
+      <div class="blog-body">
+<div class="tldr"><p><strong>Short answer:</strong> Every business has that one task. The one that eats an hour every single day, the same clicks, the same copy-paste, the same follow-ups. I used to accept it as the cost of running things.</p></div>
+<p>Every business has that one task. The one that eats an hour every single day, the same clicks, the same copy-paste, the same follow-ups. I used to accept it as the cost of running things. Then I stopped doing it myself — and I didn&#x27;t hire anyone either.</p>
+<p>I gave the whole workflow to Claude. Not as a chatbot. As an employee.</p>
+<h2>The Prompt</h2>
+<p>Pick one repetitive workflow your business handles every day, then paste this into Claude:</p>
+<pre><code>Act as an AI automation architect. Here&#x27;s a task my business handles every day: [task]. Design an end-to-end automation using n8n, APIs, and AI agents. Include triggers, integrations, decision logic, error handling, and estimated costs. Give me a step-by-step implementation plan with minimal manual work.
+</code></pre>
+<p>Replace <code>[task]</code> with your actual workflow, in plain words. &quot;Every morning I check Gmail for new orders, copy them into a sheet, and message the customer on WhatsApp.&quot; That&#x27;s enough.</p>
+<h2>What You Get Back</h2>
+<p>Claude hands you a complete plan, not a vague idea:</p>
+<ul>
+<li><strong>Triggers</strong> — what starts the automation (a new email, a form submission, a time of day)</li>
+<li><strong>Integrations</strong> — which tools connect to which, and how</li>
+<li><strong>Decision logic</strong> — what happens when things go the normal way, and when they don&#x27;t</li>
+<li><strong>Error handling</strong> — what the system does when an API fails or data is missing</li>
+<li><strong>Estimated costs</strong> — what the whole thing costs to run each month</li>
+<li><strong>Step-by-step implementation</strong> — in order, with minimal manual work</li>
+</ul>
+<h2>How I Actually Use It</h2>
+<p>One workflow at a time. I never hand Claude five processes at once — the plan gets generic and I stop trusting it. I pick the single most repetitive task, get the plan, build it in n8n, and let it run for a week before touching the next one.</p>
+<p>Two things I check before building: the cost estimate (n8n self-hosted is free, the cloud version and the APIs are not), and the error handling (an automation that silently fails is worse than no automation at all).</p>
+<h2>The Shift</h2>
+<p>The point was never the prompt. The point is the question it forces you to answer: which task am I repeating every day that a system could do instead? Once you name it, the automation is the easy part.</p>
+<p>Start with one task. Today.</p>
+
+      </div>
+    </article>
+    <nav class="pager">
+      <span><a href="/blog/tokeneconomizer/">← Microsoft&#x27;s Free Tool Made My Videos Look Instantly More Expensive</a></span><span><a href="/blog/">All articles</a></span><span><a href="/blog/video-pipeline-skills/">I Stopped Paying for a Video Team: 12 Claude Skills That Build My Entire Pipeline →</a></span>
+    </nav>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Danish Filmmaker</p>
+  <p class="footer-tag">Built frame by frame.</p>
+  <a href="/#top" class="to-top">Back to top ↑</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
