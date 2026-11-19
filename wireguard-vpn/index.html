@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free VPNs Are Dead. I Built My Own in 10 Minutes. — Danish Filmmaker</title>
+<meta name="description" content="I used to think a free VPN was a good deal. Then I learned the deal: if you&#x27;re not paying, you&#x27;re the product. Free VPNs sell your data, throttle your…">
+<link rel="canonical" href="https://dani-google.github.io/blog/wireguard-vpn/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Free VPNs Are Dead. I Built My Own in 10 Minutes.">
+<meta property="og:description" content="I used to think a free VPN was a good deal. Then I learned the deal: if you&#x27;re not paying, you&#x27;re the product. Free VPNs sell your data, throttle your…">
+<meta property="og:url" content="https://dani-google.github.io/blog/wireguard-vpn/">
+<link rel="stylesheet" href="/style.css">
+<style>
+.blog-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.3; }
+.blog-body h2 { color: var(--text); margin: 26px 0 8px; font-size: 1.25rem; }
+.blog-body h3 { color: var(--text); margin: 22px 0 6px; font-size: 1.1rem; }
+.blog-body ul, .blog-body ol { margin: 0 0 14px; padding-left: 22px; }
+.blog-body li { margin-bottom: 6px; }
+.blog-body a { color: var(--accent); }
+.blog-body blockquote { border-left: 3px solid var(--accent); margin: 0 0 14px; padding: 4px 0 4px 14px; }
+.blog-body pre { overflow-x: auto; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin: 0 0 14px; }
+.blog-body code { font-size: 0.92em; }
+.blog-body table { border-collapse: collapse; margin: 0 0 14px; width: 100%; }
+.blog-body th, .blog-body td { border: 1px solid var(--border, #333); padding: 8px; text-align: left; }
+.related { margin-top: 26px; border-top: 1px solid var(--border, #333); padding-top: 14px; }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 8px; }
+.tldr { background: rgba(255,255,255,0.05); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; margin: 0 0 18px; }
+.tldr p { margin: 0; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.pager a { color: var(--accent); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Free VPNs Are Dead. I Built My Own in 10 Minutes.", "description": "I used to think a free VPN was a good deal. Then I learned the deal: if you're not paying, you're the product. Free VPNs sell your data, throttle your…", "datePublished": "2026-11-18", "author": {"@type": "Person", "name": "Danish Khan"}, "url": "https://dani-google.github.io/blog/wireguard-vpn/", "mainEntityOfPage": "https://dani-google.github.io/blog/wireguard-vpn/"}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/#top">&gt; DANISH</a>
+  <nav>
+    <a href="/#work">Work</a>
+    <a href="/#services">Services</a>
+    <a href="/#tools">Tools</a>
+    <a href="/#about">About</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">DM for work</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
+    <article class="blog-card reveal open">
+      <div class="blog-meta"><span>18 November 2026</span><span class="tag">Free AI Tools</span></div>
+      <h1>Free VPNs Are Dead. I Built My Own in 10 Minutes.</h1>
+      <div class="blog-body">
+<div class="tldr"><p><strong>Short answer:</strong> I used to think a free VPN was a good deal. Then I learned the deal: if you're not paying, you're the product. Free VPNs sell your data, throttle your speed, and crowd thousands of strangers onto the same IP — the same IP that gets flagged everywhere.</p></div>
+<p>I used to think a free VPN was a good deal. Then I learned the deal: if you&#x27;re not paying, you&#x27;re the product. Free VPNs sell your data, throttle your speed, and crowd thousands of strangers onto the same IP — the same IP that gets flagged everywhere.</p>
+<p>So I built my own. It took about 10 minutes, and it runs on WireGuard.</p>
+<h2>What it is</h2>
+<p>WireGuard is a modern VPN protocol — faster and simpler than OpenVPN. And wireguard-install, a free script on GitHub by hwdsl2, turns a small server into your personal VPN: it installs WireGuard, generates your configs, and gives you a QR code to scan on your phone.</p>
+<h2>Why it beats a free VPN</h2>
+<ul>
+<li><strong>Your own IP.</strong> Nobody else uses it, so it doesn&#x27;t get flagged for someone else&#x27;s abuse. For me, this is the real win — a static IP that&#x27;s mine alone.</li>
+<li><strong>No logs by a VPN company.</strong> Your traffic goes through a server you control.</li>
+<li><strong>Speed.</strong> WireGuard is lightweight — no bloated app, no crowded server.</li>
+<li><strong>One config works everywhere.</strong> Phone, laptop, tablet — same setup.</li>
+</ul>
+<h2>Step 1: Get a small VPS</h2>
+<p>Rent the cheapest VPS you can find — around $3–5/month — with Ubuntu 22.04.</p>
+<h2>Step 2: Run the installer</h2>
+<p>SSH into the server as root and run:</p>
+<pre><code>curl -O https://raw.githubusercontent.com/hwdsl2/wireguard-install/master/wireguard-install.sh
+chmod +x wireguard-install.sh
+./wireguard-install.sh
+</code></pre>
+<p>The script asks a few questions (port, DNS, client name) and does the rest. Time: about 5 minutes.</p>
+<h2>Step 3: Add your devices</h2>
+<p>The script shows a QR code — scan it with the WireGuard app on your phone. For your laptop, it saves a config file — import it into the WireGuard app. One command adds more devices later.</p>
+<h2>Step 4: Connect and check</h2>
+<p>Turn the VPN on, then check your IP — it should show your server&#x27;s IP. Done. You now have your own private tunnel.</p>
+<h2>The honest catch</h2>
+<ul>
+<li><strong>It&#x27;s not free.</strong> The server costs a few dollars a month. Still cheaper than most paid VPNs.</li>
+<li><strong>Your VPS provider can see your traffic.</strong> Pick a reputable one. You&#x27;re trading trust in a VPN company for trust in a hosting company.</li>
+<li><strong>Datacenter IPs can still be flagged by strict sites.</strong> This is a privacy tool, not a magic invisibility cloak.</li>
+<li><strong>You&#x27;re the admin now.</strong> Updates are on you — a few minutes a month.</li>
+</ul>
+<h2>Bottom line</h2>
+<p>If you use a VPN every day, stop renting someone else&#x27;s crowded, logging server. Build your own. Ten minutes, a few dollars a month, and the IP is yours alone.</p>
+<p><strong>Muse karegi:</strong> the full step-by-step with commands, and help picking the VPS. <strong>Aap karenge:</strong> create the VPS and run the installer. Total time: about 15 minutes.</p>
+
+      </div>
+    </article>
+    <nav class="pager">
+      <span><a href="/blog/distribution-personal-brand/">← Distribution Is the Last Moat Left: How I&#x27;m Building a Personal Brand That Reaches Millions From Zero</a></span><span><a href="/blog/">All articles</a></span><span><a href="/blog/tokeneconomizer/">Microsoft&#x27;s Free Tool Made My Videos Look Instantly More Expensive →</a></span>
+    </nav>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Danish Filmmaker</p>
+  <p class="footer-tag">Built frame by frame.</p>
+  <a href="/#top" class="to-top">Back to top ↑</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
