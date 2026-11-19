@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Paying for Premiere Pro: My Free Tool Stack That Replaced It — Danish Filmmaker</title>
+<meta name="description" content="Every month, editors pay for software that mostly does jobs free tools already do. I stopped thinking of video editing as one app and started thinking of…">
+<link rel="canonical" href="https://dani-google.github.io/blog/free-editing-tools/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stop Paying for Premiere Pro: My Free Tool Stack That Replaced It">
+<meta property="og:description" content="Every month, editors pay for software that mostly does jobs free tools already do. I stopped thinking of video editing as one app and started thinking of…">
+<meta property="og:url" content="https://dani-google.github.io/blog/free-editing-tools/">
+<link rel="stylesheet" href="/style.css">
+<style>
+.blog-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.3; }
+.blog-body h2 { color: var(--text); margin: 26px 0 8px; font-size: 1.25rem; }
+.blog-body h3 { color: var(--text); margin: 22px 0 6px; font-size: 1.1rem; }
+.blog-body ul, .blog-body ol { margin: 0 0 14px; padding-left: 22px; }
+.blog-body li { margin-bottom: 6px; }
+.blog-body a { color: var(--accent); }
+.blog-body blockquote { border-left: 3px solid var(--accent); margin: 0 0 14px; padding: 4px 0 4px 14px; }
+.blog-body pre { overflow-x: auto; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin: 0 0 14px; }
+.blog-body code { font-size: 0.92em; }
+.blog-body table { border-collapse: collapse; margin: 0 0 14px; width: 100%; }
+.blog-body th, .blog-body td { border: 1px solid var(--border, #333); padding: 8px; text-align: left; }
+.related { margin-top: 26px; border-top: 1px solid var(--border, #333); padding-top: 14px; }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 8px; }
+.tldr { background: rgba(255,255,255,0.05); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; margin: 0 0 18px; }
+.tldr p { margin: 0; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.pager a { color: var(--accent); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Stop Paying for Premiere Pro: My Free Tool Stack That Replaced It", "description": "Every month, editors pay for software that mostly does jobs free tools already do. I stopped thinking of video editing as one app and started thinking of…", "datePublished": "2026-11-15", "author": {"@type": "Person", "name": "Danish Khan"}, "url": "https://dani-google.github.io/blog/free-editing-tools/", "mainEntityOfPage": "https://dani-google.github.io/blog/free-editing-tools/"}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/#top">&gt; DANISH</a>
+  <nav>
+    <a href="/#work">Work</a>
+    <a href="/#services">Services</a>
+    <a href="/#tools">Tools</a>
+    <a href="/#about">About</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">DM for work</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
+    <article class="blog-card reveal open">
+      <div class="blog-meta"><span>15 November 2026</span><span class="tag">Free Video Stack</span></div>
+      <h1>Stop Paying for Premiere Pro: My Free Tool Stack That Replaced It</h1>
+      <div class="blog-body">
+<div class="tldr"><p><strong>Short answer:</strong> Intro Every month, editors pay for software that mostly does jobs free tools already do. I stopped thinking of video editing as one app and started thinking of it as a pipeline — and my pipeline is built from eleven free, open-source tools.</p></div>
+<h2>Intro</h2>
+<p>Every month, editors pay for software that mostly does jobs free tools already do. I stopped thinking of video editing as one app and started thinking of it as a pipeline — and my pipeline is built from eleven free, open-source tools. Each one does one job properly: cutting, stabilizing, grading, slow motion, upscaling, audio, titles, export. Here is my full stack, in the order I use it.</p>
+<p>One honest note before we start: these are code tools, not apps with buttons. Most of them run from the command line and need a little technical comfort to set up. And they replace the <em>jobs</em> of an editor&#x27;s software — they do not replace the editor. Deciding which take tells the story is still a human call, and no repo on this list makes it for you.</p>
+<h2>My Pipeline, Step by Step</h2>
+<h3>1. Find the shots — PySceneDetect</h3>
+<p>My first step is always knowing what I actually have. PySceneDetect scans my footage and finds every shot change automatically, so I get a clean shot list instead of scrubbing through a timeline by eye.</p>
+<p>https://github.com/Breakthrough/PySceneDetect</p>
+<h3>2. Cut the dead air — Auto-Editor</h3>
+<p>Silence and dead air are what make a rough cut feel long. Auto-Editor cuts them out automatically, so my first pass is already tight before I start making real decisions.</p>
+<p>https://github.com/WyattBlue/auto-editor</p>
+<h3>3. Steady the footage — vid.stab</h3>
+<p>Shaky handheld footage used to mean either living with it or paying for stabilization. vid.stab steadies it properly — my handheld shots stop distracting the viewer and start serving the scene.</p>
+<p>https://github.com/georgmartius/vid.stab</p>
+<h3>4. Grade everything to one look — color-matcher</h3>
+<p>Nothing screams amateur like shots from the same scene that don&#x27;t match. color-matcher grades every shot to one reference frame, so my whole video looks like it was shot in one world, not five.</p>
+<p>https://github.com/hahnec/color-matcher</p>
+<h3>5. Remove backgrounds — rembg</h3>
+<p>No green screen, no problem. rembg removes the background from my shots cleanly, which is what makes simple talking-head and product videos look professional without a studio setup.</p>
+<p>https://github.com/danielgatis/rembg</p>
+<h3>6. Smooth slow motion — RIFE</h3>
+<p>Real slow motion needs high frame rates — or it used to. RIFE creates smooth slow motion from normal footage by generating the in-between frames, so my regular clips can carry a dramatic slow moment.</p>
+<p>https://github.com/hzwer/ECCV2022-RIFE</p>
+<h3>7. Upscale weak footage — Real-ESRGAN</h3>
+<p>Old or low-resolution clips don&#x27;t have to stay soft. Real-ESRGAN upscales video up to 4x, and my weak footage gets a second life instead of ending up on the cutting room floor.</p>
+<p>https://github.com/xinntao/Real-ESRGAN</p>
+<h3>8. Split the audio — Demucs</h3>
+<p>Music, voice, and noise all baked into one track is a nightmare to edit around. Demucs splits any track into its separate stems, so I can control the voice, the music, and everything else independently.</p>
+<p>https://github.com/facebookresearch/demucs</p>
+<h3>9. Cut on the beat — librosa</h3>
+<p>Cuts that land on the beat feel alive; cuts that miss it feel off, even when viewers can&#x27;t say why. librosa finds the beat in my music, so every cut I place lands exactly where the track wants it.</p>
+<p>https://github.com/librosa/librosa</p>
+<h3>10. Animated titles — HyperFrames</h3>
+<p>Titles are where most free workflows fall apart. HyperFrames builds animated titles from plain HTML, so my titles look designed and move properly instead of sitting flat on the screen.</p>
+<p>https://github.com/heygen-com/hyperframes</p>
+<h3>11. Export the film — FFmpeg</h3>
+<p>Everything ends here. FFmpeg is my exporter — the tool that takes the finished work and turns it into the final film file, in whatever format and quality I need.</p>
+<p>https://github.com/FFmpeg/FFmpeg</p>
+<h2>My Honest Warning</h2>
+<p>Let me be straight with you: &quot;replaced Premiere Pro&quot; is too strong a claim. What these eleven tools replace is the <em>subscription</em> — the individual jobs you used to pay a monthly fee to do. What they do not replace is taste, pacing, and story judgment. The hardest part of editing was never the button. It was always knowing which shot to keep, which second to cut, and which take actually tells the story. That part is still yours.</p>
+<p>My rule is simple: pay for taste and time, not for buttons. The tools are free. The eye is the expensive part — and that eye is what makes your videos worth watching.</p>
+<p><em>Draft — source: X post shared by Danish (2026-11-02). Author name omitted per standing rule; the post&#x27;s Drive PDF link (a lead magnet) deliberately omitted — this article covers the tools only. Tool links are the public GitHub repos themselves. &quot;I tested all 11 on my own footage&quot; is NOT claimed — this is my curated stack, not a test report.</em></p>
+
+      </div>
+    </article>
+    <nav class="pager">
+      <span><a href="/blog/premiere-pro-replacement/">← My Free Premiere Pro Replacement: I Found the Best Free Tools for Video Editing</a></span><span><a href="/blog/">All articles</a></span><span><a href="/blog/photo-fix/">No Photographer Needed: This Free Tool Makes Any Photo Look Pro →</a></span>
+    </nav>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Danish Filmmaker</p>
+  <p class="footer-tag">Built frame by frame.</p>
+  <a href="/#top" class="to-top">Back to top ↑</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
