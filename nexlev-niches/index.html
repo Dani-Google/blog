@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Find Zero-Competition YouTube Niches Using NexLev — Danish Filmmaker</title>
+<meta name="description" content="Most YouTube automation advice tells you to &quot;pick a niche.&quot; Nobody tells you how to find one where you can actually win. I recently came across a method…">
+<link rel="canonical" href="https://dani-google.github.io/blog/nexlev-niches/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How I Find Zero-Competition YouTube Niches Using NexLev">
+<meta property="og:description" content="Most YouTube automation advice tells you to &quot;pick a niche.&quot; Nobody tells you how to find one where you can actually win. I recently came across a method…">
+<meta property="og:url" content="https://dani-google.github.io/blog/nexlev-niches/">
+<link rel="stylesheet" href="/style.css">
+<style>
+.blog-card h1 { margin: 0 0 8px; font-size: 1.5rem; line-height: 1.3; }
+.blog-body h2 { color: var(--text); margin: 26px 0 8px; font-size: 1.25rem; }
+.blog-body h3 { color: var(--text); margin: 22px 0 6px; font-size: 1.1rem; }
+.blog-body ul, .blog-body ol { margin: 0 0 14px; padding-left: 22px; }
+.blog-body li { margin-bottom: 6px; }
+.blog-body a { color: var(--accent); }
+.blog-body blockquote { border-left: 3px solid var(--accent); margin: 0 0 14px; padding: 4px 0 4px 14px; }
+.blog-body pre { overflow-x: auto; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; margin: 0 0 14px; }
+.blog-body code { font-size: 0.92em; }
+.blog-body table { border-collapse: collapse; margin: 0 0 14px; width: 100%; }
+.blog-body th, .blog-body td { border: 1px solid var(--border, #333); padding: 8px; text-align: left; }
+.related { margin-top: 26px; border-top: 1px solid var(--border, #333); padding-top: 14px; }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 8px; }
+.tldr { background: rgba(255,255,255,0.05); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; margin: 0 0 18px; }
+.tldr p { margin: 0; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.pager a { color: var(--accent); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How I Find Zero-Competition YouTube Niches Using NexLev", "description": "Most YouTube automation advice tells you to \"pick a niche.\" Nobody tells you how to find one where you can actually win. I recently came across a method…", "datePublished": "2026-11-15", "author": {"@type": "Person", "name": "Danish Khan"}, "url": "https://dani-google.github.io/blog/nexlev-niches/", "mainEntityOfPage": "https://dani-google.github.io/blog/nexlev-niches/"}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/#top">&gt; DANISH</a>
+  <nav>
+    <a href="/#work">Work</a>
+    <a href="/#services">Services</a>
+    <a href="/#tools">Tools</a>
+    <a href="/#about">About</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">DM for work</a>
+  </nav>
+</header>
+<main>
+  <section class="section">
+    <article class="blog-card reveal open">
+      <div class="blog-meta"><span>15 November 2026</span><span class="tag">YouTube Growth</span></div>
+      <h1>How I Find Zero-Competition YouTube Niches Using NexLev</h1>
+      <div class="blog-body">
+<div class="tldr"><p><strong>Short answer:</strong> Most YouTube automation advice tells you to "pick a niche." Nobody tells you how to find one where you can actually win. I recently came across a method that uses Claude Code with a YouTube analytics connector to surface niches with almost no competition — and the proof behind it stopped me scrolling.</p></div>
+<p>Most YouTube automation advice tells you to &quot;pick a niche.&quot; Nobody tells you how to find one where you can actually win. I recently came across a method that uses Claude Code with a YouTube analytics connector to surface niches with almost no competition — and the proof behind it stopped me scrolling.</p>
+<p>A faceless channel, only 2,641 subscribers, pulled 299,333 views and $3,891.98 in estimated revenue in 28 days. The channel was 45 to 50 days old. Another channel, under 25,000 subscribers, made $34,000 in 90 days. I am not presenting those numbers as a promise. I am presenting the method behind them, because the method itself is what is useful — and it is testable in an afternoon.</p>
+<h2>What You Need</h2>
+<p>Two things: Claude Code, and a connector called NexLev MCP. NexLev is a YouTube analytics tool. Its MCP (Model Context Protocol) server gives Claude Code access to real YouTube backend data — channels, views, growth, revenue estimates — so instead of guessing which niches are hot, you ask Claude to find them from the data.</p>
+<h2>Step 1: Get the NexLev MCP URL</h2>
+<p>Search &quot;NexLev MCP&quot; and open the NexLev site. Copy the remote MCP server URL. That URL is the bridge between Claude Code and YouTube&#x27;s data.</p>
+<h2>Step 2: Add the Connector in Claude Code</h2>
+<p>Go to claude.ai, open the Code tab, open the menu, then Customize, then Connectors. Add a custom connector:</p>
+<ul>
+<li>Name: <strong>NexLev</strong></li>
+<li>Paste the MCP server URL in the remote server field</li>
+<li>Leave the other two fields empty</li>
+<li>Click Add, then set all permissions to <strong>&quot;Always allow&quot;</strong> — otherwise Claude will ask for approval on every single call</li>
+</ul>
+<h2>Step 3: Connect Your NexLev Account</h2>
+<p>Click Connect and log in with your NexLev account. The free quota is enough to start. If you end up researching 10 to 20 channels a month, you will need a paid plan. The video mentioned a discount code: <strong>HOWTOAI2</strong>.</p>
+<h2>Step 4: Ask Claude to Find the Niches</h2>
+<p>In the Code tab, use a prompt like this:</p>
+<blockquote>
+<p>&quot;Find me 30 niches with below 100,000 subscribers, started in the last 3–4 months, has a viral video with over 100K views&quot;</p>
+</blockquote>
+<p>Or, if money is the filter:</p>
+<blockquote>
+<p>&quot;Find me 10 niches that are making a lot of money, over $5k per month, and they are started in the last three months&quot;</p>
+</blockquote>
+<p>Within a few minutes Claude returns a table of niches with estimated RPM and revenue. Then add one more line — &quot;include the link to the channels as well&quot; — and within a minute you have every channel link too.</p>
+<h2>Step 5: Verify One Channel By Hand</h2>
+<p>Data is a starting point, not a decision. Open a channel yourself and check it. The example from the video was a channel called &quot;David Retires&quot; — finance for elderly people, mortgage and retirement planning. About a month old, 8,000 subscribers, uploading twice a day, several videos over 100,000 views. The content is AI images with an AI avatar delivering a lecture. Its RPM is $15 to $20 per 1,000 views — finance for an older audience is one of the highest-paying corners of YouTube.</p>
+<h2>Step 6: Run Competitor Analysis (Do Not Skip This)</h2>
+<p>Finding a niche is not enough. You have to check whether it is already crowded. Ask Claude:</p>
+<blockquote>
+<p>&quot;The David Retires niche is very good. Can you find the top 10 performing competitors to this niche and also provide some information if it&#x27;s loaded with competition?&quot;</p>
+</blockquote>
+<p>This is the step most people skip — and it is the step that decides whether the niche is actually winnable.</p>
+<h2>Step 7: Track Everything in a Sheet</h2>
+<p>For every niche, keep one page in a Google Sheet with columns for the channel link, average views, subscribers, last upload date, started date, and whether the format is reproducible. Research 10 good niches first. Only then start your first channel.</p>
+<h2>Step 8: Green Flags vs Red Flags</h2>
+<p><strong>Enter the niche when:</strong> every competitor is a small channel (under 50,000 subscribers), average views are high, the channels started recently, and they are uploading daily.</p>
+<p><strong>Stay away when:</strong> every competitor is a big channel (500,000 subscribers or more). That means the niche is old and the competition is already entrenched.</p>
+<h2>The Honest Part</h2>
+<p>I want to be straight about three things. First, the revenue numbers in this method come from the creator&#x27;s own screenshots — I have not independently verified them. Second, this is not free: NexLev has a paid tier and Claude Code uses credits, so there is a real cost to running the research. Third, the creator himself said it plainly: making $10,000 a month is not easy. It is a business, and it takes work. His mature channel averaged $400 to $500 a day, with one day at $2,900, on 1 to 2 hours of work a day — but that came after the research, not instead of it.</p>
+<h2>What I Would Do First</h2>
+<p>If I were starting from zero, I would not open a channel today. I would spend one afternoon running the prompts, build the sheet with 10 niches, verify two or three channels by hand, and only then pick one. Niche selection is the whole game in faceless YouTube. Get that right, and everything after it gets easier. Get it wrong, and no amount of editing will save the channel.</p>
+
+      </div>
+    </article>
+    <nav class="pager">
+      <span><a href="/blog/reverse-engineer/">← Stop Paying for AI Video Prompts. I Reverse-Engineered the Exact System Top Creators Use.</a></span><span><a href="/blog/">All articles</a></span><span><a href="/blog/youtube-system/">My Secret YouTube System: Create, Upload, and Grow (Even as a Beginner) →</a></span>
+    </nav>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Danish Filmmaker</p>
+  <p class="footer-tag">Built frame by frame.</p>
+  <a href="/#top" class="to-top">Back to top ↑</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
