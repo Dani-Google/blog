@@ -1,9 +1,10 @@
 # Danish Filmmaker Blog
 
-> 22 practical, first-person articles on Claude, AI video, free tools, YouTube growth and building an audience — notes on what actually works.
+> 23 practical, first-person articles on Claude, AI video, free tools, YouTube growth and building an audience — notes on what actually works.
 
 ## Articles
 
+- [Claude Code Can Now Build Its Own Skills — I Checked the Leaked Prompt](https://dani-google.github.io/blog/claude-code-skill-factory/): I saw this post on X and I checked it myself. It's real — but not in the way the post claims.
 - [Google Just Let Me Build My Own Android App — No Code, No Play Store, Free](https://dani-google.github.io/blog/google-ai-studio-personal-apps/): I saw this post on X and I checked it myself. It's real.
 - [Distribution Is the Last Moat Left: How I'm Building a Personal Brand That Reaches Millions From Zero](https://dani-google.github.io/blog/distribution-personal-brand/): I spent a long time believing the product was everything. Build something good, I told myself, and people will find it. Then the AI era arrived, and that…
 - [Free VPNs Are Dead. I Built My Own in 10 Minutes.](https://dani-google.github.io/blog/wireguard-vpn/): I used to think a free VPN was a good deal. Then I learned the deal: if you're not paying, you're the product. Free VPNs sell your data, throttle your…
@@ -29,5 +30,5 @@
 
 ## About
 
-- [Blog index](https://dani-google.github.io/blog/): all 22 articles, newest first.
+- [Blog index](https://dani-google.github.io/blog/): all 23 articles, newest first.
 - [Danish Filmmaker portfolio](https://dani-google.github.io/): video editing and AI video work.
