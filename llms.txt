@@ -1,9 +1,10 @@
 # Danish Filmmaker Blog
 
-> 23 practical, first-person articles on Claude, AI video, free tools, YouTube growth and building an audience — notes on what actually works.
+> 24 practical, first-person articles on Claude, AI video, free tools, YouTube growth and building an audience — notes on what actually works.
 
 ## Articles
 
+- [GTA 6's Mandy Went Viral — and the $5.31 Seedance 2.5 Clip Behind It](https://dani-google.github.io/blog/seedance-mandy-gta6/): I opened X on Monday morning and my whole feed was one face: Mandy. Not Lucia, not Jason — Mandy, a character I had never seen in a single GTA 6 trailer.…
 - [Claude Code Can Now Build Its Own Skills — I Checked the Leaked Prompt](https://dani-google.github.io/blog/claude-code-skill-factory/): I saw this post on X and I checked it myself. It's real — but not in the way the post claims.
 - [Google Just Let Me Build My Own Android App — No Code, No Play Store, Free](https://dani-google.github.io/blog/google-ai-studio-personal-apps/): I saw this post on X and I checked it myself. It's real.
 - [Distribution Is the Last Moat Left: How I'm Building a Personal Brand That Reaches Millions From Zero](https://dani-google.github.io/blog/distribution-personal-brand/): I spent a long time believing the product was everything. Build something good, I told myself, and people will find it. Then the AI era arrived, and that…
@@ -30,5 +31,5 @@
 
 ## About
 
-- [Blog index](https://dani-google.github.io/blog/): all 23 articles, newest first.
+- [Blog index](https://dani-google.github.io/blog/): all 24 articles, newest first.
 - [Danish Filmmaker portfolio](https://dani-google.github.io/): video editing and AI video work.
